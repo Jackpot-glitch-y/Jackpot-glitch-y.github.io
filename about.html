@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>About — Top Gun Laparoscopic Surgeon Club</title>
+  <meta name="description" content="About the Top Gun Laparoscopic Surgeon Club at Cornell — mission, leadership, and how to get involved." />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">Top Gun Laparoscopic Club</a>
+      <button class="nav-toggle" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">☰</button>
+      <nav id="main-nav" class="nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html" class="active">About / Team</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="about-intro">
+      <h1>About the Club</h1>
+      <p>We are a student-led organization focused on laparoscopic and minimally invasive surgical skills, education, and community. We run simulation workshops, talks, and mentorship programs to help members develop technical competency and professional connections.</p>
+    </section>
+
+    <section class="team">
+      <h2>Leadership & Team</h2>
+      <p class="muted">Student officers and faculty advisors (examples shown; replace with real names & photos).</p>
+
+      <div class="team-grid">
+        <div class="team-card">
+          <img src="https://via.placeholder.com/160x160?text=Photo" alt="President photo" />
+          <h3>Alex Morgan</h3>
+          <p class="small">President — Class of 2026. Interests: minimally invasive surgery, surgical education.</p>
+        </div>
+
+        <div class="team-card">
+          <img src="https://via.placeholder.com/160x160?text=Photo" alt="Vice President photo" />
+          <h3>Jamie Lee</h3>
+          <p class="small">Vice President — Events & Workshops coordinator.</p>
+        </div>
+
+        <div class="team-card">
+          <img src="https://via.placeholder.com/160x160?text=Photo" alt="Faculty advisor photo" />
+          <h3>Dr. S. Patel</h3>
+          <p class="small">Faculty Advisor — Dept. of Surgery (Weill Cornell Medicine).</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="container club-values">
+      <h2>Mission & Values</h2>
+      <ul>
+        <li>Provide accessible hands-on training for students.</li>
+        <li>Foster mentorship and professional development.</li>
+        <li>Encourage ethical, inclusive, and evidence-based practice.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© Cornell Top Gun Laparoscopic Club</p>
+    </div>
+  </footer>
+
+  <script>
+    (function(){
+      const btn = document.querySelector('.nav-toggle');
+      const nav = document.getElementById('main-nav');
+      btn.addEventListener('click', () => {
+        btn.setAttribute('aria-expanded', btn.getAttribute('aria-expanded') !== 'true');
+        nav.classList.toggle('open');
+      });
+    })();
+  </script>
+</body>
+</html>
