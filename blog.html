@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Blog — Top Gun Laparoscopic Surgeon Club</title>
+  <meta name="description" content="News, recaps, and technical posts from Cornell's Top Gun Laparoscopic Surgeon Club." />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">Top Gun Laparoscopic Club</a>
+      <button class="nav-toggle" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">☰</button>
+      <nav id="main-nav" class="nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="blog.html" class="active">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Club News & Articles</h1>
+
+    <section class="posts-grid">
+      <article class="post-card">
+        <h2>Workshop Recap: Fundamentals of Camera Control</h2>
+        <p class="meta">March 22, 2026 — By Alex Morgan</p>
+        <p>We ran an intro session on camera handling and ergonomics. Key takeaways: center the monitor, maintain triangulation, and consistent port placement. <a href="#">Read more →</a></p>
+      </article>
+
+      <article class="post-card">
+        <h2>Interview: A Resident's Path to Minimally Invasive Surgery</h2>
+        <p class="meta">February 14, 2026 — By Jamie Lee</p>
+        <p>Dr. Patel discusses residency, research, and tips for students. Highlights include how to plan research projects and how simulation practice helped their first cases. <a href="#">Read more →</a></p>
+      </article>
+    </section>
+
+    <p class="muted">Want to contribute? Email the club or use the contact page.</p>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© Cornell Top Gun Laparoscopic Club</p>
+    </div>
+  </footer>
+
+  <script>
+    (function(){
+      const btn = document.querySelector('.nav-toggle');
+      const nav = document.getElementById('main-nav');
+      btn.addEventListener('click', () => {
+        btn.setAttribute('aria-expanded', btn.getAttribute('aria-expanded') !== 'true');
+        nav.classList.toggle('open');
+      });
+    })();
+  </script>
+</body>
+</html>
