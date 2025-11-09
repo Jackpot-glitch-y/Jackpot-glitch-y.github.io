@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact — Top Gun Laparoscopic Surgeon Club</title>
+  <meta name="description" content="Contact the Top Gun Laparoscopic Surgeon Club at Cornell." />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">Top Gun Laparoscopic Club</a>
+      <button class="nav-toggle" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">☰</button>
+      <nav id="main-nav" class="nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Get in touch</h1>
+    <p>For membership, events, or speaking opportunities:</p>
+
+    <section class="contact-grid">
+      <div>
+        <h2>Email</h2>
+        <p><a href="mailto:topgun-lap@cornell.edu">topgun-lap@cornell.edu</a> (example address)</p>
+
+        <h2>Location</h2>
+        <p>Clinical Skills Lab, Weill Hall — Cornell University</p>
+      </div>
+
+      <form class="contact-form" action="https://formspree.io/f/your-form-id" method="POST" aria-label="Contact form">
+        <label>
+          <span>Name</span>
+          <input type="text" name="name" required />
+        </label>
+
+        <label>
+          <span>Email</span>
+          <input type="email" name="email" required />
+        </label>
+
+        <label>
+          <span>Message</span>
+          <textarea name="message" rows="6" required></textarea>
+        </label>
+
+        <button class="btn" type="submit">Send message</button>
+        <p class="muted small">No backend set up? Use the email address above or replace the form action with your endpoint.</p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© Cornell Top Gun Laparoscopic Club</p>
+    </div>
+  </footer>
+
+  <script>
+    (function(){
+      const btn = document.querySelector('.nav-toggle');
+      const nav = document.getElementById('main-nav');
+      btn.addEventListener('click', () => {
+        btn.setAttribute('aria-expanded', btn.getAttribute('aria-expanded') !== 'true');
+        nav.classList.toggle('open');
+      });
+    })();
+  </script>
+</body>
+</html>
