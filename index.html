@@ -54,4 +54,29 @@
 
     <section class="container quick-info">
       <h3>Upcoming: Endoscopy + Laparoscopy Workshop</h3>
-      <p><stron
+      <p><strong>Date:</strong> April 4, 2026 • <strong>Location:</strong> Clinical Skills Lab, Weill Hall</p>
+      <p class="muted">Open to Cornell students. Limited seats — RSVP on the club Slack or via email.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© Cornell University Top Gun Laparoscopic Surgeon Club — Student Organization</p>
+      <p class="small"><a href="contact.html">Contact</a> · <a href="about.html">About</a> · <a href="blog.html">Blog</a></p>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile nav toggle (keeps JS minimal and inline as requested)
+    (function(){
+      const btn = document.querySelector('.nav-toggle');
+      const nav = document.getElementById('main-nav');
+      btn.addEventListener('click', () => {
+        const expanded = btn.getAttribute('aria-expanded') === 'true';
+        btn.setAttribute('aria-expanded', !expanded);
+        nav.classList.toggle('open');
+      });
+    })();
+  </script>
+</body>
+</html>
